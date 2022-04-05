@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
+import routes from '.src/routes/routes.js';
 
 const app = express();
 const PORT = 1025;
@@ -23,3 +24,5 @@ app.get('/', (req, res) =>
 app.listen(PORT, () => 
     console.log(`Your server is running on port ${PORT}`)
 );
+
+routes(app);
