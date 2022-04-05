@@ -1,9 +1,11 @@
 /**/
 import mongoose from 'mongoose';
 
-export let use_schema = new Schema({
-    name: {type: String, required: true },
-    description: {type: String, required: true },
+const Schema = mongoose.Schema;
+
+export const use_schema = new Schema({
+    name: {type: String, required: 'Enter product name' },
+    description: {type: String, required: 'Enter product description' },
     category: String,
     price: Number,
     created_date: {type: Date, default: Date.now() },

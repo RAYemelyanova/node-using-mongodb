@@ -1,7 +1,12 @@
 /**/
 import mongoose from 'mongoose';
-import addnewProduct from '../controllers/controllers.js';
+import { addnewProduct } from '../controllers/controllers';
 
-export function routes (app) {
-    app.route("/products").post(addnewProduct);
+const routes = (app) => {
+    app.route("/products")
+    
+    // Post endpoint
+    .post(addnewProduct);
 }
+
+export default routes;
