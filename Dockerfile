@@ -10,4 +10,4 @@ RUN npm install
 
 COPY . /src/app
 
-EXPOSE 4000
+EXPOSE 1025
