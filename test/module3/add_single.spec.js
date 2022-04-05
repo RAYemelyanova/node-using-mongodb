@@ -5,7 +5,7 @@ describe('Creating documents', () => {
     it('Create the model and schema @model-create', (done) => {
         try {
             expect(fs.readFileSync('src/models/models.js').toString())
-            .to.contain("export const ProductSchema = new Schema({")
+            .to.contain("export const use_schema = new Schema({")
             expect(fs.readFileSync('src/models/models.js').toString())
                 .to.contain("const Schema = mongoose.Schema;")
             done();      
